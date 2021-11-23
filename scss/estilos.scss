@@ -1,0 +1,171 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+$--clr-primario: bisque;
+$--clr-hero: #fff0f5;
+$--clr-link: cyan;
+$--clr-nav: brown;
+$mostrar-ubicación: true;
+
+.mostrar {
+    @if mostrar-ubicacion{
+        border: 1px solid black;
+    }
+}
+
+.font-size {
+    font-size: 2.5rem;
+}
+
+.font-size1 {
+    font-size: 1rem;
+}
+
+.font-size2 {
+    font-size: 0.7rem;
+}
+
+.font-sizeh1 {
+    font-size: 4.5rem;
+}
+
+.font-sizeh2 {
+    font-size: 3.5rem;
+}
+
+.color-links {
+    color: $--clr-link;
+    text-decoration: none;
+}
+
+.color-links:hover {
+    color: $--clr-nav;
+}
+
+.color-nav {
+    color: $--clr-nav;
+}
+
+.color-nav:hover {
+    color: $--clr-link;
+}
+
+.min-w {
+    min-width: max-content;
+}
+
+.max-h{
+    max-height: 75vh;
+}
+
+.max-h1 {
+    max-height: 80vh;
+}
+
+.background-primario {
+    background-color: $--clr-primario;
+}
+
+.background-hero {
+    background-color: $--clr-hero;
+}
+
+.border-radius {
+    border-radius: 1.5rem;
+}
+
+.alto {
+    max-height: 10vh;
+}
+
+.alto-r {
+    max-height: 4vh;
+}
+
+.object-fit {
+    object-fit: contain;
+}
+
+.object-cover{
+    object-fit: cover;
+}
+
+.font-italianno {
+    font-family: 'Italianno', cursive;
+}
+
+.menu li {
+    position: relative;
+}
+
+/*-----------------------------------------------------HEADER SUBMENU-------------------------------------------------------*/
+
+.submenu {
+    background-color: $--clr-primario;
+    position: absolute;
+    border-radius: 1rem;
+    top: 100%;
+    left: -0.5em;
+    list-style: none;
+    padding: 2em 1em;
+    padding-left: 0.5em;
+    display: none;
+    flex-flow: column;
+    gap: 1em;
+    min-width: max-content;
+}
+.menu > li:hover > .submenu {
+    display: flex;
+}
+
+/*-------------------------------------------Tarjetas Productos---------------------------------------------*/
+
+.tarjetas:hover {
+    border: #ff7a59 solid 2px;
+    color: #ff7a59;
+}
+
+/*------------------------------------------Formulario Productos--------------------------------------------*/
+
+.form-p {
+    width: 70vw;
+    justify-self: center;
+    text-align: center;
+    background-color: #faf4e1;
+    border-radius: 1rem;
+}
+
+form textarea {
+    width: 40vw;
+    height: 6.5rem;
+}
+
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.5rem;
+    width: 20vw;
+    height: 2.5em;
+    padding: 0.5em;
+    margin: 0.5rem;
+    vertical-align: bottom;
+}
+
+.checkbox {
+    text-align: center;
+    width: 0.8rem;
+    height: 1rem;
+}
+
+label {
+    font-family: 'Italianno', cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 0.9em;
+    text-indent: -15px;
+}
+
+/*----------------------------------------Formulario Contacto-----------------------------------------*/
+select {
+    max-height: 1.5em;
+}
