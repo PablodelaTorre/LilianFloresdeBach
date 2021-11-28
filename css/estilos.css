@@ -7855,6 +7855,14 @@ textarea.form-control-lg {
 .background-hero {
   background-color: #fff0f5; }
 
+.background-link-tarjetas {
+  background-color: white;
+  text-decoration: none;
+  transition: 0.3s; }
+
+.background-link-tarjetas:hover {
+  background-color: brown; }
+
 .border-radius {
   border-radius: 1.5rem; }
 
