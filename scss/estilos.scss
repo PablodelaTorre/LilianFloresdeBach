@@ -5,7 +5,7 @@ $--clr-primario: bisque;
 $--clr-hero: #fff0f5;
 $--clr-link: cyan;
 $--clr-nav: brown;
-$mostrar-ubicación: true;
+$mostrar-ubicación: false;
 
 .mostrar {
     @if mostrar-ubicacion{
@@ -103,6 +103,10 @@ $mostrar-ubicación: true;
 
 .font-italianno {
     font-family: 'Italianno', cursive;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu li {
