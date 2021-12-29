@@ -81,6 +81,7 @@
             <div class="card my-2 mx-2 col-4 col-sm-3 col-md-2 tarjetas px-0">
                 <div class="card-body">
                     <h1 class="d-flex justify-content-center card-title fw-bold font-italianno fs-3">N°1 Agrimony</h1>
+                    <p class="font-italianno fs-5 fw-bold">Precio</p>
                 </div>      
                 <a href="#agrimony"><img src="../img/productos/agrimony.jpg" alt="Imagen flores agrimony" class="card-img-bottom img-fluid"></a> 
             </div>
@@ -667,7 +668,20 @@
     <div class="container">
         <h2>Carrito</h2>
         <hr>
+        <div class="row" id="items"></div>
     </div>
+
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Título</h5>
+                    <p>Precio</p>
+                    <button class="btn btn-dark">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </template>
 
     <footer>
     <div class="container-fluid background-primario w-100">
