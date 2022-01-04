@@ -7905,6 +7905,12 @@ textarea.form-control-lg {
 .menu > li:hover > .submenu {
   display: flex; }
 
+.carrito {
+  max-width: 2.5vw;
+  margin-left: 1rem;
+  background-color: bisque;
+  border-radius: 1rem; }
+
 /*-------------------------------------------Tarjetas Productos---------------------------------------------*/
 .tarjetas:hover {
   border: #ff7a59 solid 2px;

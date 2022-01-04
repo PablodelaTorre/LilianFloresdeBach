@@ -133,6 +133,12 @@ $mostrar-ubicación: false;
     display: flex;
 }
 
+.carrito {
+    max-width: 2.5vw;
+    margin-left: 1rem;
+    background-color: $--clr-primario;
+    border-radius: 1rem;
+}
 
 /*-------------------------------------------Tarjetas Productos---------------------------------------------*/
 
