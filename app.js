@@ -71,3 +71,20 @@ const recorrerCarrito = () => {
         templateCarrito.querySelectorAll('td')[0].textContent = producto.cantidad
     })
 }
+
+class Auto {
+    constructor(marca, modelo, color, velMax, cantPuertas) {
+        this.marca = marca
+        this.modelo = modelo
+        this.color = color
+        this.velMax = velMax
+        this.cantPuertas = cantPuertas
+    }
+    encendido(){
+        console.log("El motor esta encendido")
+    }
+}
+
+const toyota = new Auto ("toyota", "corolla", "rojo", 210, "4 puertas")
+console.log(toyota)
+toyota.encendido()
