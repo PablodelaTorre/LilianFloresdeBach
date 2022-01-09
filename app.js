@@ -72,19 +72,28 @@ const recorrerCarrito = () => {
     })
 }
 
-class Auto {
-    constructor(marca, modelo, color, velMax, cantPuertas) {
-        this.marca = marca
-        this.modelo = modelo
-        this.color = color
-        this.velMax = velMax
-        this.cantPuertas = cantPuertas
-    }
-    encendido(){
-        console.log("El motor esta encendido")
-    }
-}
+//desafío array agregado(agrego array apartado del carrito para cumplir con el desafío)
 
-const toyota = new Auto ("toyota", "corolla", "rojo", 210, "4 puertas")
-console.log(toyota)
-toyota.encendido()
+//const frutas = ["banana", "manzana", "higo", "níspero", "pomelo"]
+
+//for (let i = 0; i <= frutas.length; i++) {
+//    if (frutas[i] === "higo") {
+//        console.log(frutas[i])
+//    }else {
+//        console.log("solo queremos higos")
+//    }
+//}
+
+
+
+//utilizando .map (otro array usando otro metodo para agregar una propiedad nueva al objeto)
+
+//const autos2 = [{patente:1, marca:"ford", puertas:"4 puertas", velMax:220, precio:160}]
+
+//const agregandoModelo = autos2.map((auto) => ({
+//   ...auto,
+//    modelo: "focus"
+//}))
+
+//console.log(agregandoModelo)
+
