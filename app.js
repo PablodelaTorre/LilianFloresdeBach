@@ -20,7 +20,6 @@ const fetchData = async () => {
     try {
         const res = await fetch('api.json')
         const data = await res.json()
-        //console.log(data)
         recorrerTarjetas(data)
         
     } catch (error) {
@@ -39,18 +38,13 @@ const recorrerTarjetas = data => {
     cards.appendChild(fragment)
 }
 
-const addCarrito = e => {
-    //console.log(e.target)
-    //console.log(e.target.classList.contains('btn-dark'))
-    if (e.target.classList.contains('btn-dark')){
+const addCarrito = e => {    if (e.target.classList.contains('btn-dark')){
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation()
 }
 
-const setCarrito = objeto => {
-    //console.log(objeto)
-    const producto = {
+const setCarrito = objeto => {    const producto = {
         id: objeto.querySelector('.btn-dark').dataset.id,
         title: objeto.querySelector('h5').textContent,
         precio: objeto.querySelector('p').textContent,
@@ -72,28 +66,26 @@ const recorrerCarrito = () => {
     })
 }
 
-//desafío array agregado(agrego array apartado del carrito para cumplir con el desafío)
+class TarjetasCarrito {
+    constructor(id, title, precio, cantidad) {
+        this.id = id,
+        this.title = title,
+        this.precio = precio,
+        this.cantidad = cantidad}
+}
 
-//const frutas = ["banana", "manzana", "higo", "níspero", "pomelo"]
+const producto1 = new TarjetasCarrito (1, "Agrimony", 100, 0)
+const producto2 = new TarjetasCarrito (2, "Aspen", 100, 0)
+const producto3 = new TarjetasCarrito (3, "Beech", 120, 0)
+const producto4 = new TarjetasCarrito (4, "Cerato", 150, 0)
 
-//for (let i = 0; i <= frutas.length; i++) {
-//    if (frutas[i] === "higo") {
-//        console.log(frutas[i])
-//    }else {
-//        console.log("solo queremos higos")
-//    }
-//}
+let productos = [producto1, producto2, producto3, producto4];
 
+const recorreProductos = (arr) => {
+    for (let i=0; i<=arr.length-1; i++){
+        console.log(productos[i])
+    }    
+}
 
-
-//utilizando .map (otro array usando otro metodo para agregar una propiedad nueva al objeto)
-
-//const autos2 = [{patente:1, marca:"ford", puertas:"4 puertas", velMax:220, precio:160}]
-
-//const agregandoModelo = autos2.map((auto) => ({
-//   ...auto,
-//    modelo: "focus"
-//}))
-
-//console.log(agregandoModelo)
+recorreProductos(productos)
 
