@@ -72,12 +72,17 @@ class TarjetasCarrito {
         this.title = title,
         this.precio = precio,
         this.cantidad = cantidad}
+        precioIva(){
+            return (this.precio * 1.21)
+        }
 }
 
 const producto1 = new TarjetasCarrito (1, "Agrimony", 100, 0)
 const producto2 = new TarjetasCarrito (2, "Aspen", 100, 0)
 const producto3 = new TarjetasCarrito (3, "Beech", 120, 0)
 const producto4 = new TarjetasCarrito (4, "Cerato", 150, 0)
+
+console.log("El precio total es de: " + producto1.precioIva() + "$")
 
 let productos = [producto1, producto2, producto3, producto4];
 
@@ -88,4 +93,6 @@ const recorreProductos = (arr) => {
 }
 
 recorreProductos(productos)
+
+
 
