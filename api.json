@@ -9,191 +9,229 @@
     {
         "precio": 100,
         "id": 2,
-        "title": "Aspen"
+        "title": "Aspen",
+        "img": "img/productos/aspen.jpg"
     },
     {
         "precio": 150,
         "id": 3,
-        "title": "Beech"
+        "title": "Beech",
+        "img": "img/productos/beech.jpg"
     },
     {
         "precio": 200,
         "id": 4,
-        "title": "Centaury"
+        "title": "Centaury",
+        "img": "img/productos/centauryp.jpg"
     },
     {
         "precio": 100,
         "id": 5,
-        "title": "Cerato"
+        "title": "Cerato",
+        "img": "img/productos/cerato.jpg"
     },
     {
         "precio": 150,
         "id": 6,
-        "title": "Cherry Plum"
+        "title": "Cherry Plum",
+        "img": "img/productos/cherry_plump.jpg"
     },
     {
         "precio": 150,
         "id": 7,
-        "title": "Chestnut Bud"
+        "title": "Chestnut Bud",
+        "img": "img/productos/chesnut-bud.jpg"
     },
     {
         "precio": 200,
         "id": 8,
-        "title": "Chicory"
+        "title": "Chicory",
+        "img": "img/productos/chicory.jpg"
     },
     {
         "precio": 100,
         "id": 9,
-        "title": "Clematis"
+        "title": "Clematis",
+        "img": "img/productos/clematis.jpg"
     },
     {
         "precio": 150,
         "id": 10,
-        "title": "Crab Apple"
+        "title": "Crab Apple",
+        "img": "img/productos/crab-apple.jpg"
     },
     {
         "precio": 150,
         "id": 11,
-        "title": "Elm"
+        "title": "Elm",
+        "img": "img/productos/elm.jpg"
     },
     {
         "precio": 200,
         "id": 12,
-        "title": "Gentian"
+        "title": "Gentian",
+        "img": "img/productos/gentianp.jpg"
     },
     {
         "precio": 100,
         "id": 13,
-        "title": "Gorse"
+        "title": "Gorse",
+        "img": "img/productos/gorse.jpg"
     },
     {
         "precio": 150,
         "id": 14,
-        "title": "Heather"
+        "title": "Heather",
+        "img": "img/productos/heather.jpg"
     },
     {
         "precio": 200,
         "id": 15,
-        "title": "Holly"
+        "title": "Holly",
+        "img": "img/productos/holly.jpg"
     },
     {
         "precio": 100,
         "id": 16,
-        "title": "Honeysuckle"
+        "title": "Honeysuckle",
+        "img": "img/productos/honeysuckle.jpg"
     },
     {
         "precio": 150,
         "id": 17,
-        "title": "Hornbeam"
+        "title": "Hornbeam",
+        "img": "img/productos/hornbeam.jpg"
     },
     {
         "precio": 200,
         "id": 18,
-        "title": "Impatiens"
+        "title": "Impatiens",
+        "img": "img/productos/impatiens.jpg"
     },
     {
         "precio": 100,
         "id": 19,
-        "title": "Larch"
+        "title": "Larch",
+        "img": "img/productos/larch.jpg"
     },
     {
         "precio": 150,
         "id": 20,
-        "title": "Mimulus"
+        "title": "Mimulus",
+        "img": "img/productos/mimulus.jpg"
     },
     {
         "precio": 150,
         "id": 21,
-        "title": "Mustard"
+        "title": "Mustard",
+        "img": "img/productos/mustard.jpg"
     },
     {
         "precio": 200,
         "id": 22,
-        "title": "Oak"
+        "title": "Oak",
+        "img": "img/productos/Oak.jpg"
     },
     {
         "precio": 100,
         "id": 23,
-        "title": "Olive"
+        "title": "Olive",
+        "img": "img/productos/olive.jpg"
     },
     {
         "precio": 150,
         "id": 24,
-        "title": "Pine"
+        "title": "Pine",
+        "img": "img/productos/pine.jpg"
     },
     {
         "precio": 150,
         "id": 25,
-        "title": "Red Chestnut"
+        "title": "Red Chestnut",
+        "img": "img/productos/red-chestnut.jpg"
     },
     {
         "precio": 200,
         "id": 26,
-        "title": "Rock Rose"
+        "title": "Rock Rose",
+        "img": "img/productos/rock-rose.jpg"
     },
     {
         "precio": 100,
         "id": 27,
-        "title": "Rock Water"
+        "title": "Rock Water",
+        "img": "img/productos/rock-water.jpg"
     },
     {
         "precio": 150,
         "id": 28,
-        "title": "Scleranthus"
+        "title": "Scleranthus",
+        "img": "img/productos/scleranthus.jpg"
     },
     {
         "precio": 100,
         "id": 29,
-        "title": "Star of Bethlehem"
+        "title": "Star of Bethlehem",
+        "img": "img/productos/star-of-bethlehem.jpg"
     },
     {
         "precio": 150,
         "id": 30,
-        "title": "Sweet Chestnut"
+        "title": "Sweet Chestnut",
+        "img": "img/productos/sweet-chestnut.jpg"
     },
     {
         "precio": 200,
         "id": 31,
-        "title": "Vervain"
+        "title": "Vervain",
+        "img": "img/productos/vervain.jpg"
     },
     {
         "precio": 100,
         "id": 32,
-        "title": "Vine"
+        "title": "Vine",
+        "img": "img/productos/vine.jpg"
     },
     {
         "precio": 150,
         "id": 33,
-        "title": "Walnut"
+        "title": "Walnut",
+        "img": "img/productos/walnut.jpg"
     },
     {
         "precio": 150,
         "id": 34,
-        "title": "Water Violet"
+        "title": "Water Violet",
+        "img": "img/productos/water-violet.jpg"
     },
     {
         "precio": 200,
         "id": 35,
-        "title": "White Chestnut"
+        "title": "White Chestnut",
+        "img": "img/productos/white-chestnut.jpg"
     },
     {
         "precio": 100,
         "id": 36,
-        "title": "Wild Oat"
+        "title": "Wild Oat",
+        "img": "img/productos/wild-oat.jpg"
     },
     {
         "precio": 150,
         "id": 37,
-        "title": "Wild Rose"
+        "title": "Wild Rose",
+        "img": "img/productos/wild-rosep.jpg"
     },
     {
         "precio": 150,
         "id": 38,
-        "title": "Willow"
+        "title": "Willow",
+        "img": "img/productos/willow.jpg"
     },
     {
         "precio": 200,
         "id": 39,
-        "title": "Rescue Remedy"
+        "title": "Rescue Remedy",
+        "img": "img/productos/rescue-remedy.jpg"
     }
 ]
