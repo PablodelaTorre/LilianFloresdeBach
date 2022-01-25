@@ -3,7 +3,8 @@
     {
         "precio": 200,
         "id": 1,
-        "title": "Agrimony"
+        "title": "Agrimony",
+        "img": "img/productos/agrimony.jpg"
     },
     {
         "precio": 100,
