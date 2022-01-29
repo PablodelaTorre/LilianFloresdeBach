@@ -639,19 +639,19 @@
                 <legend class="font-italianno fs-1">Preparados a Pedido.</legend>
                         <div>
                             <div>
-                                <input type="text" name="nombre" placeholder="Ingrese Nombre">
+                                <input type="text" name="nombre" id="form-prod-nombre" placeholder="Ingrese Nombre">
                             </div>
                             <div>
-                                <input type="text" name="apellido" placeholder="Ingrese Apellido">
+                                <input type="text" name="apellido" id="form-prod-apellido" placeholder="Ingrese Apellido">
                             </div>
                             <div>
-                                <input type="email" name="email" placeholder="Ingrese Email">
+                                <input type="email" name="email" id="form-prod-email" placeholder="Ingrese Email">
                             </div>
                             <div>
                                 <p class="font-italianno fs-2 mt-3">Describa para quien y que necesita de las flores.</p>
                             </div>
                             <div>
-                                <textarea name="comentarios" rows="10" cols="40"  class="font-italianno fs-6">Escribe aquí tus comentarios</textarea>
+                                <textarea name="comentarios" rows="10" cols="40" id="form-prod-text"  class="font-italianno fs-6">Escribe aquí tus comentarios</textarea>
                             </div>
                             <div>
                                 <input type="submit" value="enviar">
@@ -700,8 +700,9 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="../scripts/formulario-productos.js"></script>
     
 </body>
 </html>
