@@ -33,6 +33,10 @@ $(document).ready(function() {
                 tipo: alertNombre,
                 msg: "Formato no válido en el campo nombre, solo se permiten letras."
             })
+        } else {
+            formProdNombre.removeClass("is-invalid")
+            formProdNombre.addClass("is-valid")
+            alertNombre.addClass("d-none")
         }
 
         if(!regFormProdApellido.test(formProdApellido.val)) {            
@@ -40,6 +44,10 @@ $(document).ready(function() {
                 tipo: alertApellido,
                 msg: "Formato no válido en el campo apellido, solo se permiten letras.."
             })
+        } else {
+            formProdApellido.removeClass("is-invalid")
+            formProdApellido.addClass("is-valid")
+            alertApellido.addClass("d-none")
         }
 
         if(!regFormProdEmail.test(formProdEmail.val)) {
@@ -47,6 +55,15 @@ $(document).ready(function() {
                 tipo: alertEmail,
                 msg: "Escriba un correo válido."
             })
+        } else {
+            formProdEmail.removeClass("is-invalid")
+            formProdEmail.addClass("is-valid")
+            alertEmail.addClass("d-none")
+        }
+
+        if (errores.length !== 0) {
+            pintarMensajeError(errores);
+            return;
         }
 
         pintarMensajeExito()
