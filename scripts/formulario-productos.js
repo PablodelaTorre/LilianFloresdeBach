@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$( document ).ready(function() {    
     const formularioPrepadaros = $("#formulario-preparados")
 
     const formProdNombre = $("#form-prod-nombre")
@@ -11,7 +11,7 @@ $(document).ready(function() {
     const alertApellido = $("#alert-apellido")
     const alertEmail = $("#alert-email")
 
-    const alertSucces = $("#alert-succes")
+    const alertSucces = $("#alert-success")
 
     const regFormProdNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     const regFormProdApellido = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
@@ -19,7 +19,15 @@ $(document).ready(function() {
 
     const pintarMensajeExito = () => {
         alertSucces.removeClass("d-none")
-        alertSucces.text("Mensaje enviado con éxito")
+        alertSucces.prepend("Mensaje enviado con éxito") 
+    }
+
+    const pintarMensajeError = (errores) => {
+        errores.forEach( item => {
+            item.tipo.removeClass("d-none");
+            item.tipo.text(item.msg) 
+            item.tipo.addClass("is-invalid")
+        });
     }
 
     formularioPrepadaros.on("submit", (e) => {
@@ -28,7 +36,9 @@ $(document).ready(function() {
 
         const errores = []
 
-        if(!regFormProdNombre.test(formProdNombre.val)) {            
+        if(!regFormProdNombre.test(formProdNombre.val)) {
+            formProdNombre.addClass("is-invalid")
+            
             errores.push({
                 tipo: alertNombre,
                 msg: "Formato no válido en el campo nombre, solo se permiten letras."
@@ -39,7 +49,9 @@ $(document).ready(function() {
             alertNombre.addClass("d-none")
         }
 
-        if(!regFormProdApellido.test(formProdApellido.val)) {            
+        if(!regFormProdApellido.test(formProdApellido.val)) {   
+            formProdApellido.addClass("is-invalid") 
+                
             errores.push({
                 tipo: alertApellido,
                 msg: "Formato no válido en el campo apellido, solo se permiten letras.."
@@ -51,6 +63,8 @@ $(document).ready(function() {
         }
 
         if(!regFormProdEmail.test(formProdEmail.val)) {
+            formProdEmail.addClass("is-invalid")
+
             errores.push({
                 tipo: alertEmail,
                 msg: "Escriba un correo válido."
@@ -68,7 +82,6 @@ $(document).ready(function() {
 
         pintarMensajeExito()
     })
-
-}) 
+})
 
 
