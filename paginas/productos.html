@@ -641,12 +641,15 @@
                             <div>
                                 <input type="text" name="nombre" id="form-prod-nombre" placeholder="Ingrese Nombre">
                             </div>
+                                <p class="text-danger mb-2 d-none" id="alert-nombre"></p>
                             <div>
                                 <input type="text" name="apellido" id="form-prod-apellido" placeholder="Ingrese Apellido">
+                                <p class="text-danger mb2 d-none" id="alert-apellido"></p>
                             </div>
                             <div>
                                 <input type="email" name="email" id="form-prod-email" placeholder="Ingrese Email">
                             </div>
+                                <p class="text-danger mb-2 d-none" id="alert-email"></p>
                             <div>
                                 <p class="font-italianno fs-2 mt-3">Describa para quien y que necesita de las flores.</p>
                             </div>
@@ -654,13 +657,17 @@
                                 <textarea name="comentarios" rows="10" cols="40" id="form-prod-text"  class="font-italianno fs-6">Escribe aquí tus comentarios</textarea>
                             </div>
                             <div>
-                                <input type="submit" value="enviar">
-                                <input type="reset" value="resetear"> 
+                                <button type="submit" value="enviar">
+                                <!--<input type="reset" value="resetear">--> 
                             </div>
                         </div>    
                     
             </fieldset>
         </form>
+
+        <div class="alert alert-success my-2 d-none" id="alert-succes">
+            Mensaje enviado con éxito
+        </div>
     </div>
     </main>
 
