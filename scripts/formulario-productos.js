@@ -5,21 +5,19 @@ $( document ).ready(function() {
     const formProdApellido = $("#form-prod-apellido")
     const formProdEmail = $("#form-prod-email")
 
-    const botonEnviar = $("boton-enviar")
-
     const alertNombre = $("#alert-nombre")
     const alertApellido = $("#alert-apellido")
     const alertEmail = $("#alert-email")
 
-    const alertSucces = $("#alert-success")
+    const alertSuccess = $("#alert-success")
 
     const regFormProdNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     const regFormProdApellido = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     const regFormProdEmail = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
 
     const pintarMensajeExito = () => {
-        alertSucces.removeClass("d-none")
-        alertSucces.prepend("Mensaje enviado con éxito") 
+        alertSuccess.removeClass("d-none")
+        alertSuccess.prepend("Mensaje enviado con éxito") 
     }
 
     const pintarMensajeError = (errores) => {
@@ -32,11 +30,10 @@ $( document ).ready(function() {
 
     formularioPrepadaros.on("submit", (e) => {
         e.preventDefault()
-        alertSucces.addClass("d-none")
-
+        alertSuccess
         const errores = []
 
-        if(!regFormProdNombre.test(formProdNombre.val)) {
+        if(!regFormProdNombre.test(formProdNombre.val())) {
             formProdNombre.addClass("is-invalid")
             
             errores.push({
@@ -49,7 +46,7 @@ $( document ).ready(function() {
             alertNombre.addClass("d-none")
         }
 
-        if(!regFormProdApellido.test(formProdApellido.val)) {   
+        if(!regFormProdApellido.test(formProdApellido.val())) {   
             formProdApellido.addClass("is-invalid") 
                 
             errores.push({
@@ -62,7 +59,7 @@ $( document ).ready(function() {
             alertApellido.addClass("d-none")
         }
 
-        if(!regFormProdEmail.test(formProdEmail.val)) {
+        if(!regFormProdEmail.test(formProdEmail.val())) {
             formProdEmail.addClass("is-invalid")
 
             errores.push({
