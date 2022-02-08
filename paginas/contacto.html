@@ -50,7 +50,7 @@
                             <a href="#" class="color-links bg-white border-radius text-decoration-underline px-1 font-size2">Inscribirse al Curso</a>                            
                         </li>       
                         <li>
-                            <a href="../carrito-de-compras.html" target="_blank"><img src="../img/carrito.webp" class="carrito background-primario" alt="carrito"></a>                                    
+                            <a href="carrito-de-compras.html" target="_blank"><img src="../img/carrito.webp" class="carrito background-primario" alt="carrito"></a>                                    
                         </li>                                           
                     </ul>                        
                 </div>                    
@@ -70,12 +70,15 @@
                             <div class="">
                                 <div class="d-flex justify-content-center">
                                     <input type="text" name="nombre" placeholder="Ingrese Nombre"></td>
+                                    <p class="text-danger mb-2 d-none" id="alert-nombre-contacto"></p>
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <input type="text" name="apellido" placeholder="Ingrese Apellido"></td>
+                                    <p class="text-danger mb-2 d-none" id="alert-apellido-contacto"></p>
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <input type="email" name="email" placeholder="Ingrese Email"></td>
+                                    <p class="text-danger mb-2 d-none" id="alert-email-contacto"></p>
                                 </div>
                                 <div class="mt-4 d-flex justify-content-center">
                                     <p class="d-flex justify-content-center font-italianno fs-3">Tema de la Consulta</p></td>
@@ -92,6 +95,7 @@
                                 </div>                                
                                 <div class="d-flex justify-content-center">
                                     <textarea name="comentarios" rows="10" cols="40"  class="font-italianno fs4" placeholder="Escribe aquí tus comentarios"></textarea>
+                                    <p class="text-danger mb-2 d-none" id="alert-textarea-contacto"></p>
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <input type="submit" value="enviar">
@@ -158,7 +162,8 @@
 
 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/formulario-contacto.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     
