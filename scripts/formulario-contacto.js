@@ -1,5 +1,6 @@
 $(document).ready(() => {
-    $("formulario-contacto").on("submit", (e) => {
+    const formularioContacto = $("formulario-contacto") 
+    formularioContacto.on("submit", (e) => {
         e.preventDefault()
         const xhttp = new XMLHttpRequest()
         xhttp.open('GET', '../formulario-contacto.json', true)
