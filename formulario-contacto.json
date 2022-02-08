@@ -1,0 +1,10 @@
+[
+    {
+        "error": "Debe completar el campo de texto.",
+        "id": 1
+    },
+    {
+        "correcto": "La información se ha enviado correctamente.",
+        "id": 2
+    }
+]
