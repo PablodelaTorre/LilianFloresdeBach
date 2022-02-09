@@ -108,14 +108,14 @@ const pintarFooter = () => {
 }
 
 const btnAccion = e => {
-    //Acción de aumentar
+    
     if (e.target.classList.contains('btn-info')){
         const producto = carrito[e.target.dataset.id]
         producto.cantidad = carrito[e.target.dataset.id].cantidad + 1
         carrito[e.target.dataset.id] = {...producto}
         pintarCarrito()
     }
-    //Acción de disminuir
+    
     if (e.target.classList.contains('btn-danger')){
         const producto = carrito[e.target.dataset.id]
         producto.cantidad = carrito[e.target.dataset.id].cantidad - 1

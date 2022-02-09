@@ -16,12 +16,14 @@ $( document ).ready(function() {
     const regFormProdEmail = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
 
     const pintarMensajeExito = () => {
+        alertSuccess.text("")
         alertSuccess.removeClass("d-none")
         alertSuccess.prepend("Mensaje enviado con éxito") 
     }
 
     const pintarMensajeError = (errores) => {
         errores.forEach( item => {
+            alertSuccess.addClass("d-none")
             item.tipo.removeClass("d-none");
             item.tipo.text(item.msg) 
             item.tipo.addClass("is-invalid")

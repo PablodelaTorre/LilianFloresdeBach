@@ -16,12 +16,10 @@ $(document).ready(function() {
         xhttp.onreadystatechange = function(){
             if(this.readyState == 4 && this.status == 200){
                 const errorCorrecto = JSON.parse(this.responseText)
-                console.log(errorCorrecto)
                 let arrEstados =[]
                 for(let i = 0; i < errorCorrecto.length; i++){
                     arrEstados.push(errorCorrecto[i].estado)
                 }
-                console.log(arrEstados)
                 if (nombreContacto.val() != "" && apellidoContacto.val() != "" && emailContacto.val() != "" && textoContacto.val() != ""){
                     document.getElementById("correcto-contacto").innerText = ""
                     document.getElementById("error-contacto").innerText = ""
