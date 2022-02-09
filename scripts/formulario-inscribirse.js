@@ -1,15 +1,15 @@
 $( document ).ready(function() {    
-    const formularioPrepadaros = $("#formulario-preparados")
+    const formularioPrepadaros = $("#formulario-inscribirse")
 
-    const formProdNombre = $("#form-prod-nombre")
-    const formProdApellido = $("#form-prod-apellido")
-    const formProdEmail = $("#form-prod-email")
+    const formProdNombre = $("#form-insc-nombre")
+    const formProdApellido = $("#form-insc-apellido")
+    const formProdEmail = $("#form-insc-email")
 
-    const alertNombre = $("#alert-nombre")
-    const alertApellido = $("#alert-apellido")
-    const alertEmail = $("#alert-email")
+    const alertNombre = $("#alert-insc-nombre")
+    const alertApellido = $("#alert-insc-apellido")
+    const alertEmail = $("#alert-insc-email")
 
-    const alertSuccess = $("#alert-success")
+    const alertSuccess = $("#alert-insc-success")
 
     const regFormProdNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     const regFormProdApellido = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;

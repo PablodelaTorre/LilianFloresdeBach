@@ -1,6 +1,5 @@
-<!-- Bootstrap CSS -->
 <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Las distintas esencias tienen distintos efectos y distintas utilidades, además se realizan preparados para poder combinar las flores y poder obtener los beneficios de varias flores según lo requiera cada caso.">
@@ -13,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
     
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Flores de Bach - Inscribirse</title>
@@ -70,37 +67,37 @@
     
 
         <div class="form-p container mt-2">
-            <form id="formulario-preparados" action="" method="POST" enctype="text/plain" class="row justify-content-center">
+            <form id="formulario-inscribirse" action="" method="POST" enctype="text/plain" class="row justify-content-center">
                 <fieldset> 
                     <legend class="font-italianno fs-1">Inscribirse al curso.</legend>
                             <div>
                                 <div>
-                                    <input type="text" name="nombre" id="form-prod-nombre" placeholder="Ingrese Nombre" class="is-invalid">
+                                    <input type="text" name="nombre" id="form-insc-nombre" placeholder="Ingrese Nombre" class="is-invalid">
                                 </div>
-                                    <p class="text-danger mb-2 d-none" id="alert-nombre"></p>
+                                    <p class="text-danger mb-2 d-none" id="alert-insc-nombre"></p>
                                 <div>
-                                    <input type="text" name="apellido" id="form-prod-apellido" placeholder="Ingrese Apellido" class="is-invalid">
-                                    <p class="text-danger mb2 d-none" id="alert-apellido"></p>
+                                    <input type="text" name="apellido" id="form-insc-apellido" placeholder="Ingrese Apellido" class="is-invalid">
+                                    <p class="text-danger mb2 d-none" id="alert-insc-apellido"></p>
                                 </div>
                                 <div>
-                                    <input type="email" name="email" id="form-prod-email" placeholder="Ingrese Email" class="is-invalid">
+                                    <input type="email" name="email" id="form-insc-email" placeholder="Ingrese Email" class="is-invalid">
                                 </div>
-                                    <p class="text-danger mb-2 d-none" id="alert-email"></p>
+                                    <p class="text-danger mb-2 d-none" id="alert-insc-email"></p>
                                 <div>
                                     <p class="font-italianno fs-2 mt-3">Describa para quien y que necesita de las flores.</p>
                                 </div>
                                 <div>
-                                    <textarea name="comentarios" rows="10" cols="40" id="form-prod-text"  class="font-italianno fs-6" placeholder="Escribe aquí tus comentarios"></textarea>
+                                    <textarea name="comentarios" rows="10" cols="40" id="form-insc-text"  class="font-italianno fs-6" placeholder="Escribe aquí tus comentarios"></textarea>
                                 </div>
                                 <div>
-                                    <input type="submit" value="Inscribirse" id="boton-enviar">
+                                    <input type="submit" value="Inscribirse" id="boton-insc-enviar">
                                 </div>
                             </div>    
                         
                 </fieldset>
             </form>
 
-            <div class="alert alert-success my-2 d-none" id="alert-success"></div>
+            <div class="alert alert-success my-2 d-none" id="alert-insc-success"></div>
 
         </div>
     </main>
@@ -139,8 +136,6 @@
     </footer>
 
 
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../scripts/jquery-3.6.0.min.js"></script>
     <script src="../scripts/formulario-inscribirse.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
