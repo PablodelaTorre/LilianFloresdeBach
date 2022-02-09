@@ -1,10 +1,10 @@
 [
     {
-        "error": "Debe completar el campo de texto.",
+        "estado": "Error al intentar enviar el formulario, debe completar todos los campos.",
         "id": 1
     },
     {
-        "correcto": "La información se ha enviado correctamente.",
+        "estado": "La información se ha enviado correctamente.",
         "id": 2
     }
 ]
