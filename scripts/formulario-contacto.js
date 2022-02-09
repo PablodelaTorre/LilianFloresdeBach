@@ -1,12 +1,9 @@
 $(document).ready(function() {
     const formularioContacto = $("#formulario-contacto") 
-    const nombreContacto = $("#nombre-contacto").val()
-    const apellidoContacto = $("#apellido-contacto").val()
-    const emailContacto = $("#email-contacto").val()
-    const textoContacto = $("#texto-contacto").val()
-
-    const errorContacto = $("#error-contacto")
-    const correctoContacto = $("#correcto-contacto")
+    const nombreContacto = $("#nombre-contacto")
+    const apellidoContacto = $("#apellido-contacto")
+    const emailContacto = $("#email-contacto")
+    const textoContacto = $("#texto-contacto")
 
     formularioContacto.on("submit", (e) => {
         e.preventDefault()
@@ -22,12 +19,19 @@ $(document).ready(function() {
                 for(let i = 0; i < errorCorrecto.length; i++){
                     arrEstados.push(errorCorrecto[i].estado)
                 }
-                if (nombreContacto != "" && apellidoContacto != "" && emailContacto != "" && textoContacto != ""){
-                    correctoContacto.text = arrEstados[0]
-                    correctoContacto.fadeIn(3000).fadeOut(3000)
+                console.log(arrEstados)
+                if (nombreContacto.val() != "" && apellidoContacto.val() != "" && emailContacto.val() != "" && textoContacto.val() != ""){
+                    document.getElementById("correcto-contacto").innerText = ""
+                    document.getElementById("error-contacto").innerText = ""
+                    document.getElementById("correcto-contacto").innerText = arrEstados[0] 
+                    //document.getElementById("correcto-contacto").innerText = ""
+                    //correctoContacto.fadeIn(3000)
                 }else{
-                    errorContacto.text = arrEstados[1]
-                    errorContacto.fadeIn(3000).fadeOut(3000)
+                    document.getElementById("correcto-contacto").innerText = ""
+                    document.getElementById("error-contacto").innerText = ""
+                    document.getElementById("error-contacto").innerText = arrEstados[1] 
+                    //document.getElementById("error-contacto").innerText = ""
+                    //errorContacto.fadeIn(3000)
                 }
             }
         }
