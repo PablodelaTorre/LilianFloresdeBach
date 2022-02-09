@@ -5,6 +5,8 @@ $(document).ready(function() {
     const emailContacto = $("#email-contacto")
     const textoContacto = $("#texto-contacto")
 
+    
+
     formularioContacto.on("submit", (e) => {
         e.preventDefault()
         const xhttp = new XMLHttpRequest()
@@ -24,14 +26,12 @@ $(document).ready(function() {
                     document.getElementById("correcto-contacto").innerText = ""
                     document.getElementById("error-contacto").innerText = ""
                     document.getElementById("correcto-contacto").innerText = arrEstados[0] 
-                    //document.getElementById("correcto-contacto").innerText = ""
-                    //correctoContacto.fadeIn(3000)
+                    $("#correcto-contacto").fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1000)
                 }else{
                     document.getElementById("correcto-contacto").innerText = ""
                     document.getElementById("error-contacto").innerText = ""
                     document.getElementById("error-contacto").innerText = arrEstados[1] 
-                    //document.getElementById("error-contacto").innerText = ""
-                    //errorContacto.fadeIn(3000)
+                    $("#error-contacto").fadeOut(1000).fadeIn(1000).fadeOut(1000).fadeIn(1000)
                 }
             }
         }
