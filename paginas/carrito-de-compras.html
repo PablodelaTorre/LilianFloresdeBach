@@ -75,6 +75,13 @@
                 <tr id="footer">
                     <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
                 </tr>
+                <div class="contenedor">
+                    <div class="row">
+                        <div class="alert alert-success my-2 d-flex justify-content-center d-none" id="compra-correcta">
+                            <p class="" id="mensaje-compra-realizada"></p>
+                        </div>
+                    </div>
+                </div>
             </tfoot>
         </table>
 
@@ -122,6 +129,13 @@
             </button>
         </td>
         <td class="font-weight-bold">$ <span>5000</span></td>
+        <th>
+            <td>
+                <button class="btn btn-success btn-sm" id="finalizar-compra">
+                    Finalizar compra
+                </button>
+            </td>
+        </th>        
     </template>
 
     <footer>

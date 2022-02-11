@@ -1,11 +1,13 @@
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
+const compraCorrecta = document.getElementById('compra-correcta')
 const templateCard = document.getElementById('template-card').content
 const templateFooterCarrito = document.getElementById('template-footer-carrito').content
 const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
+const mensajeCompraRealizada = document.getElementById("mensaje-compra-realizada")
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
@@ -102,8 +104,16 @@ const pintarFooter = () => {
 
     const btnVaciar = document.getElementById('vaciar-carrito')
     btnVaciar.addEventListener('click', () => {
+        mensajeCompraRealizada.textContent = ""
+        compraCorrecta.classList.add("d-none")
         carrito = {}
         pintarCarrito()
+    })
+    const btnFinalizarCompra = document.getElementById('finalizar-compra')
+    btnFinalizarCompra.addEventListener('click', () => {
+        mensajeCompraRealizada.textContent = ""
+        compraCorrecta.classList.remove("d-none")
+        mensajeCompraRealizada.textContent = "La compra se ha realizado correctamente"
     })
 }
 
